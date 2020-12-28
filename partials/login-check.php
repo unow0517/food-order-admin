@@ -8,7 +8,7 @@
         $_SESSION['no-login-message'] = "<div class='error text-center'>Please log in to access to admin</div>";
         
         //Redirect to log in page with message
-        header("location:".SITEURL."admin/login.php");
+        header("location:admin/login.php");
         
     }
 
