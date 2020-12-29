@@ -96,7 +96,7 @@
             ?>    
 
                 <img src="<?php echo SITEURL; ?>images/category/<?php
-                echo $image_name; ?>" alt="foodimage" width="100px">
+                echo $image_name; ?>" alt="adminImage" width="100px">
             
             <?php 
               } else{

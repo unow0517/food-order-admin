@@ -64,7 +64,7 @@
             $_SESSION['login'] = "<div class='success'> Hello $username</div>";
             $_SESSION['user'] = $username;
 
-            header("location:".SITEURL."admin/");
+            header("location:".SITEURL."admin");
         }else{
             $_SESSION['login'] = "<div class='error text-center'> LogIn Failed</div>";
             // header("location:".SITEURL."admin/");
