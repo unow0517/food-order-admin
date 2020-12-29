@@ -67,6 +67,7 @@
             header("location:./index.php");
         }else{
             $_SESSION['login'] = "<div class='error text-center'> LogIn Failed</div>";
+            header("location:./login.php");
         }
     }
 ?>
