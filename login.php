@@ -1,8 +1,8 @@
-<?php include('../config/constants.php')?>;
+<?php include('./config/constants.php')?>;
 <html>
     <head>
         <title>Login - Food Order System</title>
-        <link rel="stylesheet" href= "../css/admin.css"/>
+        <link rel="stylesheet" href= "./css/admin.css"/>
     </head>
     <body>
         <div class="login">
@@ -64,7 +64,7 @@
             $_SESSION['login'] = "<div class='success'> Hello $username</div>";
             $_SESSION['user'] = $username;
 
-            header("location:/index.php");
+            header("location:./index.php");
         }else{
             $_SESSION['login'] = "<div class='error text-center'> LogIn Failed</div>";
         }
