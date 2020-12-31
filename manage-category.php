@@ -95,7 +95,7 @@
                 //Display the Image
             ?>    
 
-                <img src="<?php echo SITEURL; ?>images/category/<?php
+                <img src="./images/category/<?php
                 echo $image_name; ?>" alt="adminImage" width="100px">
             
             <?php 
