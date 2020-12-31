@@ -11,7 +11,7 @@
     // define('DB_NAME','food-order');
 
     //Remote Sql!!
-    define('SITEURL','http://localhost/food-order/');
+    define('SITEURL','http://localhost/admin/');
     define('HOST','remotemysql.com');
     define('DB_USERNANE','fv5Ta1LEFP');
     define('DB_PASSWORD','y0ruXjvav6');
