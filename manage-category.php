@@ -102,7 +102,7 @@
               } else{
             ?>
 
-                <div class="error">There is no data</div>
+                <div class="error">There is no Image</div>
 
             <?php 
               }

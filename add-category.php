@@ -106,7 +106,7 @@
 
           $source_path = $_FILES['image']['tmp_name'];
           
-          $destination_path = "../images/category/".$image_name;
+          $destination_path = "./images/category/".$image_name;
 
           //finally upload the image
           $upload = move_uploaded_file($source_path, $destination_path);
@@ -116,7 +116,7 @@
           if($upload == false){
 
             $_SESSION['upload'] = "<div class = 'error'> Upload Error11</div>";
-            header("location:".SITEURL."admin/add-category.php");
+            header("location:./admin/add-category.php");
             die();
           } 
         }
@@ -138,10 +138,10 @@
       //check whether the queyr is executed or not
       if($res == true){
         $_SESSION['add'] ="<div class = 'success'>Added Successfully</div>";
-        header("location:".SITEURL."admin/manage-category.php");
+        header("location:./admin/manage-category.php");
       } else{
         $_SESSION['add']="<div class = 'error'>Error adding category</div>";
-        header("location:".SITEURL."admin/manage-category.php");
+        header("location:./admin/manage-category.php");
       } 
     }
   ?>
