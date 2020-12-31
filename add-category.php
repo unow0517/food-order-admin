@@ -116,7 +116,7 @@
           if($upload == false){
 
             $_SESSION['upload'] = "<div class = 'error'> Upload Error11</div>";
-            header("location:./admin/add-category.php");
+            header("location:./add-category.php");
             die();
           } 
         }
@@ -138,10 +138,10 @@
       //check whether the queyr is executed or not
       if($res == true){
         $_SESSION['add'] ="<div class = 'success'>Added Successfully</div>";
-        header("location:./admin/manage-category.php");
+        header("location:./manage-category.php");
       } else{
         $_SESSION['add']="<div class = 'error'>Error adding category</div>";
-        header("location:./admin/manage-category.php");
+        header("location:./manage-category.php");
       } 
     }
   ?>
