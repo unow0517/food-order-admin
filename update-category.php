@@ -22,7 +22,7 @@
         }
       }else{
         $_SESSION['no-category-found'] = "<div class='error'> Category not Found</div>";
-        header("location:".SITEURL."admin/manage-category.php");
+        header("location:".SITEURL."/manage-category.php");
       }
       $image_name = $_GET['image_name'];
       
@@ -111,24 +111,24 @@
 
               $source_path = $_FILES['image']['tmp_name'];
 
-              $destination_path = "../images/category/".$image_name;
+              $destination_path = "./images/category/".$image_name;
 
               $upload = move_uploaded_file($source_path, $destination_path);
 
               if($upload == false){
                 $_SESSION['upload'] = "<div class='error'>Error uploading new picture</div>";
-                header("location:".SITEURL."admin/manage-category.php");
+                header("location:".SITEURL."manage-category.php");
                 die();
               }
 
               //Remove the Current Image
-              $remove_path = "../images/category/".$current_image;
+              $remove_path = "./images/category/".$current_image;
               $remove = unlink($remove_path);
 
               if($remove==false){
 
                 $_SESSION['failed-remove'] = "<div class='error'>Error removing current image</div>";
-                header("location:".SITEURL."admin/manage-category.php");
+                header("location:".SITEURL."manage-category.php");
                 die();
               };
             }
@@ -150,10 +150,10 @@
           
           if($res2 == true){
             $_SESSION['update'] = "<div class='success'> Updated done </div>";
-            header("location:".SITEURL."admin/manage-category.php");
+            header("location:".SITEURL."manage-category.php");
           }else{
             $_SESSION['update'] = "<div class='error'> Updated Error </div>";
-            header("location:".SITEURL."admin/manage-category.php");
+            header("location:".SITEURL."manage-category.php");
           }
           
         //If data is not submitted  

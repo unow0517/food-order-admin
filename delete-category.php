@@ -1,5 +1,5 @@
 <?php 
-  include("../config/constants.php");
+  include("./config/constants.php");
 
   if(isset($_GET['id']) AND isset($_GET['image_name'])){
     $id = $_GET['id'];
@@ -27,7 +27,7 @@
       header("location:./manage-category.php");
     } else {
       $_SESSION['delete'] = "<div class='error'>Error deleting the category</div>";
-      header("location:./admin/manage-category.php");
+      header("location:./manage-category.php");
     }
   }    
 
